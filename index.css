@@ -1,0 +1,147 @@
+body {
+    background-color: #121212;
+    font-family: "VT323", sans-serif;
+}
+
+.title {
+    
+    color: white;
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.body-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.direction {
+    font-size: 24px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+    margin: 100px;
+}
+
+.name {
+    width: 30%;
+    font-size: 24px;
+    font-family: "VT323", sans-serif;
+    box-shadow: 0px 0px 30px gray;
+    border: 1px;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 3px;
+    text-align: center;
+}
+
+.name:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.page {
+    width: 30%;
+    font-size: 24px;
+    font-family: "VT323", sans-serif;
+    box-shadow: 0px 0px 30px gray;
+    border: 1px;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 3px;
+    text-align: center;
+}
+
+.page:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.start {
+    font-size: 24px;
+    color: white;
+    margin: 40px;
+    margin-bottom: 0px;
+    cursor:pointer;
+    text-align: center;
+    width: 100px;
+    background-color: #228B22;
+    border-radius: 10px;
+}
+
+.start:active {
+    opacity: 0.6;
+}
+
+.start:disabled {
+    opacity: 0;
+}
+
+.continue {
+    font-size: 24px;
+    color: white;
+    margin: 40px;
+    margin-top: 0px;
+    cursor: pointer;
+    text-align: center;
+    width: 110px;
+    background-color: #228B22;
+    border-radius: 10px;
+}
+
+.continue:active {
+    opacity: 0.6;
+}
+
+.continue:disabled {
+    opacity: 0;
+}
+
+.good {
+    font-family: "Kelly Slab", sans-serif;
+    font-size: 50px;
+    color: #6B8E23;
+    align-items: center;
+    margin: 20px;
+    position:absolute;
+    left: 40%;
+    top: 25%;
+    z-index:-1
+}
+
+.bad {
+    font-family: "Nosifer", sans-serif;
+    font-size: 50px;
+    color: #8B0000;
+    margin: 20px;
+    position:absolute;
+    left: 37%;
+    top: 23%;
+    z-index:-2;
+}
+
+.neutral {
+    font-family: "VT323", sans-serif;
+    font-size: 50px;
+    color:#778899;
+    margin: 20px;
+    position:absolute;
+    left: 42%;
+    top: 25%;
+    z-index:3;
+}

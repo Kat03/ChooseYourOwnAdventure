@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Choose Your Own Adventure</title>
+    <script
+    src="http://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kelly+Slab|Nosifer|VT323&display=swap" rel="stylesheet">
+    <link type="text/css" href="index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="body-content">
+        <script>
+            $(document).ready(function() {
+                function initialize() {
+                    document.getElementById("lucky").style.visibility = "hidden";
+                    document.getElementById("unlucky").style.visibility = "hidden";
+                    document.getElementById("luckless").style.visibility = "hidden";
+                }
+                initialize();
+            });
+
+        </script>
+
+        <h1 class="title">Choose your own adventure!</h1>
+        <p class="direction" id="enterIn">Enter your name here:</p>
+        <div id="lucky">
+            <p class="good" id="good-ending" type="button" disabled>The End</p>
+        </div>
+
+        <div id="unlucky">
+            <p class="bad" id="bad-ending" type="button" disabled>The End</p>
+        </div>
+
+        <div id="luckless">
+            <p class="neutral" id="neutral-ending" type="button" disabled>The End</p>
+        </div>
+
+        <script>
+            function myFunction() {
+                document.getElementById("r").innerHTML = "hello";
+            }
+
+        </script>
+
+        <input class="name" id="player-name">
+        <input class="page" id="choice" type="input" disabled>
+        <div class="button-container">
+            <button class="start" id="start-button" onclick="setName()">Start</button>
+
+
+            <button class="continue" id="l" onclick="runFile()" type="button" disabled>Continue</button>
+
+        </div>
+        <div class="story">
+            <p1></p1>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
